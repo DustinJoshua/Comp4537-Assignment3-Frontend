@@ -1,0 +1,188 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2018/04/13/16/13/pixel-3316924_960_720.png);
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form button[type="submit"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #c46060;
+}
+
+.login-form h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  color: goldenrod;
+}
+
+.btnActive {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: rgb(222, 132, 132);
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 500px;
+  max-width: 1200px;
+  max-height: 85%;
+  overflow-y: auto;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: #c46060;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.typesHeading {
+  margin: 20px;
+  color: teal
+}
+
+.statsHeading {
+  margin: 20px;
+  color: goldenrod
+}
+
+p {
+  margin: 5px;
+  font-size: .75em;
+}
+
+.pokemonResults {
+  margin: 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border: 2px solid #c46060;
+  border-radius: 5px;
+  
+}
+
+.search-container {
+  margin-top: 20px;
+}
+
+.searchCheckboxes {
+  font-size: 22px;
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 10px;
+}
+
+.search-field {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #c46060;
+  border-radius: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.root-div {
+  /* background-color: rgb(162, 11, 11); */
+  border: #c46060 2px solid;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination button {
+  margin-top: 50px;
+  font-size: 1.2em; /* adjust to your desired size */
+  /* other button styles */
+}
+
+.zero-row {
+  font-size: 1em;
+}
+
+.second-row {
+  font-size: 1em;
+  color: goldenrod;
+}
+
+.error-row {
+  font-size: 1em;
+  color: #c46060;
+}
